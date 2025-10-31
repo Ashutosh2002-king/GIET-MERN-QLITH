@@ -1,0 +1,99 @@
+.container{
+    width: 900px;
+    /* height: 400px; */
+    border: 2px solid black; 
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between;*/
+    /* justify-content: center; */
+    /* justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: end;
+    justify-content: space-around;
+    justify-content: space-evenly;  */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* column-gap: 5px;
+    row-gap: 4px; */
+    gap: 5px;
+
+}
+.item{
+    width: 300px;
+    height: 70px;
+    border: 1px solid blue;
+}
+.item:nth-child(1){
+    order: 5;
+
+}
+.item:nth-child(2){
+    order: 4;
+}
+.item:nth-child(3){
+    order: 1;
+}
+.item:nth-child(4){
+    order: 3;
+}
+.item:nth-child(5){
+    order: 4; */
+}
+.grid-container{
+    width: 900px;
+    height: 500px;
+    padding: 10px;
+    border: 1px solid brown;
+    margin: 20px auto;
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 5px;
+
+}
+.items{
+    border: 1px solid blue;
+}
+.header{
+    /* grid-column-end: 4;
+    grid-column-start: 1; */
+    background-color: blueviolet;
+    grid-column: 1/4;
+}
+.sidebar{
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+    background-color: brown;
+    grid-row: 2/4;
+}
+.content1{
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    background-color: chartreuse;
+    grid-column: 2/4;
+}
+.content2{
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    background-color: darkgoldenrod;
+    grid-column: 2/3;
+}
+.content3{
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+    background-color: darkolivegreen;
+    grid-column: 3/4;
+}
+.footer{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    background-color: deeppink;
+    grid-column: 1/4;
+}
