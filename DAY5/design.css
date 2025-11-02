@@ -46,8 +46,6 @@
     order: 4; */
 }
 .grid-container{
-    width: 900px;
-    height: 500px;
     padding: 10px;
     border: 1px solid brown;
     margin: 20px auto;
